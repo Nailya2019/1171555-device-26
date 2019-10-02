@@ -1,0 +1,53 @@
+@font-face{
+	font-family: 'Gilroy Extra Bold';
+	src: url(../fonts/gilroyextrabold.woff2);
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face{
+	font-family: 'Gilroy Light';
+	src: url(../fonts/gilroylight.woff2);
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face{
+	font-family: 'Open Sans';
+	src: url(../fonts/opensans.woff2);
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face{
+	font-family: 'Open Sans Light';
+	src: url(../fonts/opensanslight.woff2);
+	font-style: normal;
+	font-weight: 400;
+}
+
+body{
+	font-size: 15px;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	color: #464646;
+  	line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+.write-us-popup{
+	display: none;
+}
+
+.map-popup{
+	display: none;
+}
+
