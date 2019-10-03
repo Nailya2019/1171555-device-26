@@ -33,13 +33,32 @@ body{
   	line-height: 2;
 }
 
+/* Центровщик */
+.container{
+	width: 1160px;
+	margin: 0 auto;
+}
 
+.header{
+	background-color: #f7e296;
+}
 
+/* index.html */
+.main-container{
 
+}
+/* catalog.html */
+.catalog-container{
 
+}
+/* catalog.html */
+.filter-container{
 
+}
 
+.footer{
 
+}
 
 
 
