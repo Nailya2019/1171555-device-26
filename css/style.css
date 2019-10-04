@@ -1,29 +1,33 @@
 @font-face{
-	font-family: 'Gilroy Extra Bold';
-	src: url(../fonts/gilroyextrabold.woff2);
+	font-family: 'Gilroy';
+	src: url(../fonts/gilroyextrabold.woff),
+		 url(../fonts/gilroyextrabold.woff2);
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 800;
 }
 
 @font-face{
-	font-family: 'Gilroy Light';
-	src: url(../fonts/gilroylight.woff2);
+	font-family: 'Gilroy';
+	src: url(../fonts/gilroylight.woff),
+		 url(../fonts/gilroylight.woff2);
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face{
+	font-family: 'Open Sans';
+	src: url(../fonts/opensans.woff),
+		 url(../fonts/opensans.woff2);
 	font-style: normal;
 	font-weight: 400;
 }
 
 @font-face{
 	font-family: 'Open Sans';
-	src: url(../fonts/opensans.woff2);
+	src: url(../fonts/opensanslight.woff),
+		 url(../fonts/opensanslight.woff2);
 	font-style: normal;
-	font-weight: 400;
-}
-
-@font-face{
-	font-family: 'Open Sans Light';
-	src: url(../fonts/opensanslight.woff2);
-	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .visually-hidden{
@@ -39,7 +43,8 @@
 
 body{
 	font-size: 15px;
-	font-family: 'Gilroy Extra Bold', 'Arial', sans-serif;	
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
   	line-height: 2;
 }
 
@@ -66,7 +71,7 @@ input{
 	font-size: 21px;
 }
 
-.btn{		
+.btn{	
 	font-size: 18px;	
 	letter-spacing: 3px;
 	text-transform: uppercase;	
@@ -76,8 +81,9 @@ input{
 .nav__item,
 .desc,
 input::placeholder{
-	font-family: 'Open Sans Light', 'Arial', sans-serif;
-	font-size: 15px;	
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 15px;
+	font-weight: 300;	
 }
 
 .desc{
@@ -125,14 +131,14 @@ input::placeholder{
 	/*color:#fff;*/
 }
 .slider-feature__item{
-	font-family: 'Open Sans Light', 'Arial', sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 300;
 	font-size: 36px;
 }
 
 .slider-feature__item span{
 	font-size: 13px;
 }
-
 
 
 /* index.html */
