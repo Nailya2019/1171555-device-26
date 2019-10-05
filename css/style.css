@@ -112,10 +112,36 @@ input::placeholder{
 .header-logo{
 	width: 165px;
 }
+.slider-head{
+	font-size: 47px;
+}
 
 .btn-catalog{
 	position: relative;
 }
+.btn-catalog:hover,
+.advantages__item:hover,
+.btn-user:hover,
+.nav__item:hover,
+.breadcrumbs__link:hover{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-catalog:active,
+.advantages__item:active,
+.btn-user:active,
+.nav__item:active,
+.popular__img-title:active,
+.breadcrumbs__link:active{
+	color: rgba(0, 0, 0, 0.302);
+}
+
+.breadcrumbs__link:active{
+	color: rgba(0, 0, 0, 0.102);
+}
+
+
+
 
 .btn-catalog::after,
 .btn-catalog::before{
@@ -125,7 +151,7 @@ input::placeholder{
 	right: -16px;
 	width: 17px;
 	height: 2px;
-	background-color: #b8a974;
+	background-color: #b8a974;	
 }
 
 .btn-catalog::after{
@@ -207,10 +233,18 @@ input::placeholder{
 .address,
 .socials__link,
 .tel,
-.footer-wrap-3 .btn-user
+.footer-wrap-3 .btn-user:hover
 {
 	color:#fff;
 }
+.footer-wrap-3 .btn-user{
+	 color: rgba(255, 255, 255, 0.702);
+}
+.footer-wrap-3 .btn-user:active{
+	color: rgba(255, 255, 255, 0.302);
+}
+
+
 
 
 /* Попап */
