@@ -71,11 +71,18 @@ input{
 	font-size: 21px;
 }
 
-.btn{	
+.nav-btn{	
 	font-size: 18px;	
 	letter-spacing: 3px;
 	text-transform: uppercase;	
+	font-weight: 800;
 }
+.btn-registed{
+	color: rgba(0, 0, 0, 0.302);
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 300;
+}
+
 
 .btn-user,
 .nav__item,
@@ -140,6 +147,42 @@ input::placeholder{
 	font-size: 13px;
 }
 
+.advantages-container{
+	background-color: #e5e5e5;
+}
+
+.breadcrumbs__item,
+.breadcrumbs__link,
+.sorting-link,
+.color-label,
+.bluetooth-label{	
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 300;	
+	font-size: 14px;
+}
+
+.breadcrumbs__item,
+.breadcrumbs__link,
+.sorting-link{
+	color: rgba(0, 0, 0, 0.302);
+}
+
+
+.sorting-head,
+.filter-head,
+.pagination-link{
+	font-size: 16px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.product-price{
+	font-size: 16px;
+	font-weight: 300;
+	color:#464646;
+}
+
+
 
 /* index.html */
 .main-container{
@@ -155,10 +198,18 @@ input::placeholder{
 }
 
 .footer{
-	width: 100%;
+	width: 100%;	
 	min-height: 325px;
 	background-color: #464646;
+}
 
+.footer-advantages__link,
+.address,
+.socials__link,
+.tel,
+.footer-wrap-3 .btn-user
+{
+	color:#fff;
 }
 
 
