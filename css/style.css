@@ -116,32 +116,41 @@ input::placeholder{
 	font-size: 47px;
 }
 
-.btn-catalog{
-	position: relative;
+.search:focus{
+	color:#000;	
 }
+
+
+.search:hover::placeholder,
 .btn-catalog:hover,
 .advantages__item:hover,
 .btn-user:hover,
 .nav__item:hover,
-.breadcrumbs__link:hover{
+.breadcrumbs__link:hover,
+.pagination-link:hover{
 	color: rgba(0, 0, 0, 0.6);
 }
 
+.search,
 .btn-catalog:active,
 .advantages__item:active,
 .btn-user:active,
 .nav__item:active,
 .popular__img-title:active,
-.breadcrumbs__link:active{
+.sorting-link,
+.breadcrumbs__item,
+.breadcrumbs__link,
+.breadcrumbs__link:active,
+.pagination-link,
+.pagination-prev:active,
+.pagination-next:active{
 	color: rgba(0, 0, 0, 0.302);
 }
+
 
 .breadcrumbs__link:active{
 	color: rgba(0, 0, 0, 0.102);
 }
-
-
-
 
 .btn-catalog::after,
 .btn-catalog::before{
@@ -187,19 +196,28 @@ input::placeholder{
 	font-size: 14px;
 }
 
-.breadcrumbs__item,
-.breadcrumbs__link,
-.sorting-link{
-	color: rgba(0, 0, 0, 0.302);
-}
-
 
 .sorting-head,
 .filter-head,
-.pagination-link{
+.pagination-link,
+.pagination-prev.
+.pagination-next{
 	font-size: 16px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
+}
+
+.pagination-active,
+.pagination-link:active{
+	color:#000;
+}
+
+
+.pagination-prev:hover,
+.pagination-prev:active,
+.pagination-next:hover,
+.pagination-next:active{
+	background: #d9d9d9;
 }
 
 .product-price{
@@ -207,7 +225,6 @@ input::placeholder{
 	font-weight: 300;
 	color:#464646;
 }
-
 
 
 /* index.html */
@@ -240,12 +257,14 @@ input::placeholder{
 .footer-wrap-3 .btn-user{
 	 color: rgba(255, 255, 255, 0.702);
 }
-.footer-wrap-3 .btn-user:active{
+.footer-wrap-3 .btn-user:active,
+.footer-advantages-list .footer-advantages__link:active{
 	color: rgba(255, 255, 255, 0.302);
 }
 
-
-
+.footer-advantages__link:hover{
+	color: rgba(255, 255, 255, 0.6);
+}
 
 /* Попап */
 .write-us-popup{
