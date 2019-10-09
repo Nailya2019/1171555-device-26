@@ -116,7 +116,11 @@ input::placeholder{
 	font-size: 47px;
 }
 
-.search:focus{
+.search:focus,
+.sorting-link:active,
+a.sorting-link__active,
+.pagination-active,
+.pagination-link:active{
 	color:#000;	
 }
 
@@ -127,6 +131,7 @@ input::placeholder{
 .btn-user:hover,
 .nav__item:hover,
 .breadcrumbs__link:hover,
+.sorting-link:hover,
 .pagination-link:hover{
 	color: rgba(0, 0, 0, 0.6);
 }
@@ -207,10 +212,7 @@ input::placeholder{
 	text-transform: uppercase;
 }
 
-.pagination-active,
-.pagination-link:active{
-	color:#000;
-}
+
 
 
 .pagination-prev:hover,
