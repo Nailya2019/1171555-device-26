@@ -105,13 +105,47 @@ input::placeholder{
 }
 
 .header{
+	display: flex;
+	margin-top:40px;
+	padding: 50px 60px 0;
 	min-height: 300px;
 	background-color: #f7e296;
+	position: relative;
 }
 
 .header-logo{
 	width: 165px;
+	position: absolute;
+	top:-18px;
 }
+
+/* Сетка в header*/
+.left-block,
+.right-block{
+	width:520px;
+}
+
+.left-block{
+	background-color: #ccf;
+}
+
+.right-block{
+	display: flex;
+	background-color: #fcc;
+}
+
+.about-contacts-wrapper{
+	display: flex;
+}
+
+.about-container{
+	background-color: #ccf;
+}
+.contacts-container{
+	background-color: #fcc;
+}
+/* end Сетка в header*/
+
 .slider-head{
 	font-size: 47px;
 }
@@ -233,6 +267,13 @@ a.sorting-link__active,
 .main-container{
 
 }
+
+/* Cетка */
+.navigation{
+	display:none;
+}
+
+
 /* catalog.html */
 .catalog-container{
 
