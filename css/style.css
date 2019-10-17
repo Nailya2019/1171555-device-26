@@ -151,9 +151,22 @@ input::placeholder{
 
 }
 
-.slider-wrap{
-	display: flex;
+.slider-wrap{	
+	display: flex;	
+	background: #f1f1f1;
+	align-items: flex-end;
+	justify-content: center;
 }
+
+.slider-img{height: auto;}
+
+.slider-inner{
+	display: flex;
+	flex-direction: column;
+	background: #369;
+}
+
+
 
 .popular-list{
 	display: flex;
@@ -169,7 +182,42 @@ input::placeholder{
 
 .footer div{
 	display: flex;
+	justify-content: space-between;
 }
+
+.footer-wrap-1{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-wrap-2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-advantages-list,
+.socials-wrap{
+	display: flex;
+
+}
+
+.footer-advantages__item{
+	/*margin-right: 35px;*/
+}
+.socials__item{
+	/*margin-right: 20px;*/
+}
+
+.footer-wrap-3{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;	
+}
+
+/*.footer__btn-wrap{
+	display: flex;
+}*/
 /* end Сеткаr*/
 
 .slider-head{
@@ -314,6 +362,8 @@ a.sorting-link__active,
 	width: 100%;	
 	min-height: 325px;
 	background-color: #464646;
+	padding-top: 65px;
+	padding-bottom: 65px;
 }
 
 .footer-advantages__link,
