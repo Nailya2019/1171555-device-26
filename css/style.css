@@ -143,30 +143,28 @@ input::placeholder{
 .about-container{
 	width:470px;
 	background-color: #ccf;
-
 }
+
 .contacts-container{
 	width:560px;
 	background-color: #fcc;
-
 }
 
 .slider-wrap{	
 	display: flex;	
 	background: #f1f1f1;
-	align-items: flex-end;
-	justify-content: center;
+	align-items: flex-start;
+	/*justify-content: center;*/
 }
 
 .slider-img{height: auto;}
 
 .slider-inner{
-	display: flex;
-	flex-direction: column;
+	/*display: flex;
+	flex-direction: column;*/
+	/*align-items: cneter;*/
 	background: #369;
 }
-
-
 
 .popular-list{
 	display: flex;
@@ -199,7 +197,6 @@ input::placeholder{
 .footer-advantages-list,
 .socials-wrap{
 	display: flex;
-
 }
 
 .footer-advantages__item{
