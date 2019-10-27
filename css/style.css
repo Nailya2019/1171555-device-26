@@ -69,6 +69,7 @@ input{
 
 .head2{		
 	font-size: 21px;
+	line-height: 60px;
 }
 
 .nav-btn{	
@@ -131,14 +132,16 @@ input::placeholder{
 
 .right-block{
 	display: flex;
+	flex-direction: column;
 	background-color: #fcc;
 }
 
+
+
 .about-contacts-wrapper{
 	display: flex;	
-	align-content: space-between;
-	background-color: brown;
-}
+	justify-content: space-between;
+}	
 
 .about-container{
 	width:470px;
@@ -153,25 +156,66 @@ input::placeholder{
 .slider-wrap{	
 	display: flex;	
 	background: #f1f1f1;
-	align-items: flex-start;
-	/*justify-content: center;*/
+	align-items: flex-end;
+	justify-content: center;
 }
 
 .slider-img{height: auto;}
 
 .slider-inner{
-	/*display: flex;
-	flex-direction: column;*/
-	/*align-items: cneter;*/
+	display: flex;
+	flex-direction: column;
+	margin-left:123px;	
 	background: #369;
 }
 
 .popular-list{
-	display: flex;
+	display: flex;	
 }
 
+.slider-feature-list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-wrap{
+	display: flex;
+	justify-content: space-between;
+}
+.btn-list{
+	display: flex;	
+}
+
+.btn-list li{
+	margin-left: 40px;
+}
+
+.advantages-list{
+	display: flex;
+	justify-content: space-between;
+}
+.advantages-btn-list{
+	margin-right: 112px;
+	background-color: #fcc;
+}
 .advantages-container div{
 	display: flex;
+
+}
+.advantages-wrap{
+	width: 695px;
+	background-color: #ccf;
+	justify-content: space-between;
+}
+
+.advantages-inner{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.advantages-text{
+	width: 430px;
 }
 
 .logo-list{
@@ -216,6 +260,11 @@ input::placeholder{
 	display: flex;
 }*/
 /* end Сеткаr*/
+
+
+.popular-container{
+	background: #fcc;
+}
 
 .slider-head{
 	font-size: 47px;
@@ -279,7 +328,7 @@ a.sorting-link__active,
 }
 
 .slider-number{
-	display: inline-block;
+	
 	font-size: 179px;
 	/*color:#fff;*/
 }
@@ -287,9 +336,11 @@ a.sorting-link__active,
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 36px;
+	/*margin-right: 80px;*/
 }
 
 .slider-feature__item span{
+	display: block;
 	font-size: 13px;
 }
 
