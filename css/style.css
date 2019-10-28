@@ -179,6 +179,7 @@ input::placeholder{
 .btn-wrap{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .btn-list{
 	display: flex;	
