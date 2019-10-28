@@ -270,6 +270,7 @@ input::placeholder{
 }
 
 .product-outer{
+	width: 760px;
 	display: flex;
 	flex-direction: column;
 }
