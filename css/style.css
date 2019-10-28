@@ -136,8 +136,6 @@ input::placeholder{
 	background-color: #fcc;
 }
 
-
-
 .about-contacts-wrapper{
 	display: flex;	
 	justify-content: space-between;
@@ -243,22 +241,69 @@ input::placeholder{
 	display: flex;
 }
 
-.footer-advantages__item{
-	/*margin-right: 35px;*/
-}
-.socials__item{
-	/*margin-right: 20px;*/
-}
-
 .footer-wrap-3{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;	
 }
 
-/*.footer__btn-wrap{
+/* catalog.html*/
+.main-aside-wrapper div,
+.breadcrumbs-list,
+.sorting,
+.product-container
+{
+	display: flex;	
+}
+
+.product-outer{
 	display: flex;
-}*/
+	flex-direction: column;
+}
+
+.sorting{
+	align-items: center;
+	justify-content: space-around;
+	background: #fcc;
+}
+
+.product-container{	
+	justify-content: space-between;
+}
+
+.product-container{
+	background-color: #ccf;
+}
+
+.pagination{
+	width: 100%;
+	background: #ebebeb;
+}
+
+.filter-container{
+	width: 470px;
+	background: #ebebeb;
+}
+
+.filter-wrap{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.footer-btn-wrapper{
+	display: flex;	
+}
+
+
+.footer-btn-wrapper a.btn-registed{
+	margin-left: 18px;
+}
+
+.footer-btn-wrapper .btn-user{
+	margin-left: 40px;
+}
+
 /* end Сеткаr*/
 
 
