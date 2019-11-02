@@ -16,7 +16,7 @@
 					<input type="text" name="search" placeholder="Посик по сайту" class="search">
 				</form>
 				
-				<div class="catalog-menu-wrap">				
+				<div class="catalog-menu-wrap">	
 					<button class="nav-btn btn-catalog">Каталог товаров</button>
 					<nav class="navigation">
 						<ul class="nav-list">
@@ -37,7 +37,10 @@
 
 			<div class="right-block">
 				<div class="btn-wrap">
-					<button class="btn-user">Вход</button>
+					<div class="user-wrapper">
+						<button class="btn-user">Вход</button>
+					</div>
+
 					<ul class="btn-list">
 						<li><a href="#" class="btn-user">Сравнить</a></li>
 						<li><a href="#" class="btn-user">Корзина</a></li>
@@ -55,12 +58,14 @@
 		<main class="main-container">
 			
 			<h1 class="visually-hidden">Интернет-магазин гаджетов «Девайс»</h1>
-
 			<section class="slider-container">
 				<div class="container">
 					<div class="slider-wrap">
-						<img src="img/slider-1.png" alt="Палка для селфи" class="slider-img">
+						<div class="slider-img-wrap">
+							<img src="img/slider-1.png" alt="Палка для селфи" class="slider-img">
+						</div>
 						<div class="slider-inner">
+							<span class="slider-line"> </span>
 							<span class="slider-number">01</span>
 							<h2 class="head2 slider-head">Делай селфи,<br> как Бен Стиллер! </h2>
 							<p class="text slider-desc">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -109,40 +114,40 @@
 				<div class="container">
 					<ul class="popular-list">
 						<li class="popular__item"><a href="" class="popular__link">
-								<figure class="popular__figure">
-									<div class="popular__img-wrap"><img src="img/popular-1.svg" alt="Виртуальная реальность" class="popular__img"></div>
-									<figcaption class="popular__img-title">Виртуальная реальность</figcaption>
-								</figure>
+								<div class="popular__figure">
+									<div class="popular__img-wrap"><span class="popular__img popular__img-1"></span></div>
+									<h3 class="popular__img-title">Виртуальная реальность</h3>
+								</div>
 							</a></li>
 						<li class="popular__item"><a href="" class="popular__link">
-								<figure class="popular__figure">
-									<div class="popular__img-wrap"><img src="img/popular-2.svg" alt="Моноподы для селфи" class="popular__img"></div>
-									<figcaption class="popular__img-title">Моноподы для селфи</figcaption>
-								</figure>
+								<div class="popular__figure">
+									<div class="popular__img-wrap"><span class="popular__img popular__img-2"></span></div>
+									<h3 class="popular__img-title">Моноподы для селфи</h3>
+								</div>
 							</a></li>
 						<li class="popular__item"><a href="" class="popular__link">
-								<figure class="popular__figure">
-									<div class="popular__img-wrap"><img src="img/popular-3.svg" alt="Экшн-камеры" class="popular__img"></div>
-									<figcaption class="popular__img-title">Экшн-камеры</figcaption>
-								</figure>
+								<div class="popular__figure">
+									<div class="popular__img-wrap"><span class="popular__img popular__img-3"></span></div>
+									<h3 class="popular__img-title">Экшн-камеры</h3>
+								</div>
 							</a></li>
 						<li class="popular__item"><a href="" class="popular__link">
-								<figure class="popular__figure">
-									<div class="popular__img-wrap"><img src="img/popular-4.svg" alt="Фитнес-браслеты" class="popular__img"></div>
-									<figcaption class="popular__img-title">Фитнес-браслеты</figcaption>
-								</figure>
+								<div class="popular__figure">
+									<div class="popular__img-wrap"><span class="popular__img popular__img-4"></span></div>
+									<h3 class="popular__img-title">Фитнес-браслеты</h3>
+								</div>
 							</a></li>
 						<li class="popular__item"><a href="" class="popular__link">
-								<figure class="popular__figure">
-									<div class="popular__img-wrap"><img src="img/popular-5.svg" alt="Умные часы" class="popular__img"></div>
-									<figcaption class="popular__img-title">Умные часы</figcaption>
-								</figure>
+								<div class="popular__figure">
+									<div class="popular__img-wrap"><span class="popular__img popular__img-5"></span></div>
+									<h3 class="popular__img-title">Умные часы</h3>
+								</div>
 							</a></li>
 						<li class="popular__item"><a href="" class="popular__link">
-								<figure class="popular__figure">
-									<div class="popular__img-wrap"><img src="img/popular-6.svg" alt="Квадрокоптеры" class="popular__img"></div>
-									<figcaption class="popular__img-title">Квадрокоптеры</figcaption>
-								</figure>
+								<div class="popular__figure">
+									<div class="popular__img-wrap"><span class="popular__img popular__img-6"></span></div>
+									<h3 class="popular__img-title">Квадрокоптеры</h3>
+								</div>
 							</a></li>
 					</ul>
 				</div>
@@ -161,21 +166,21 @@
 							<h2 class="advantages-head">Доставка</h2>
 							<p class="desc advantages-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 						</div>
-						<img src="img/delivery.svg" alt="Доставка" class="advantages-img">
+						<!-- <img src="img/delivery.svg" alt="Доставка" class="advantages-img"> -->
 					</div>
 					<div class="advantages-wrap visually-hidden">
 						<div class="advantages-inner">
 							<h2 class="head2 advantages-head">Гарантия</h2>
 							<p class="desc advantages-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 						</div>
-						<img src="img/warranty.svg" alt="Гарантия" class="advantages-img">
+						<!-- <img src="img/warranty.svg" alt="Гарантия" class="advantages-img"> -->
 					</div>
 					<div class="advantages-wrap visually-hidden">
 						<div class="advantages-inner">
 							<h2 class="head2 advantages-head">Кредит</h2>
 							<p class="desc advantages-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 						</div>
-						<img src="img/credit.svg" alt="Кредит" class="advantages-img">
+						<!-- <img src="img/credit.svg" alt="Кредит" class="advantages-img"> -->
 					</div>
 				</div>
 			</section>
