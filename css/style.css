@@ -286,42 +286,101 @@ input::placeholder{
 	margin-right: auto;
 }
 
+.advantages-container{
+	min-height: 387px;	
+	background: linear-gradient(to bottom, white 100px, #e5e5e5 0%);
+}
+
 .advantages-container div{
-	display: flex;	
+	display: flex;
 }
 
 .advantages-btn-list{
-	width: 285px;	
-	background-color: #fcc;
+	display: flex;
+	width: 285px;
+	height: 315px;
+	flex-direction: column;	
+	justify-content: center;	
 	padding-left: 0;
+	/*padding-top: 30px;*/
 	margin: 0;
 	border-right:7px solid #000;
+}
+
+.advantages-btn__item{
+	margin-bottom: 24px;	
+}
+.advantages-btn__item:last-child{
+	margin-bottom: 0;
+}
+
+.advantages-btn{
+	width: 160px;
+	text-align: center;
+	color: #000;
+	position: relative;
+	z-index: 1;
+}
+
+.advantages-btn::after{
+	content:"";
+	position: absolute;
+	left:0;	
+	width:100%;
+	height: 8px;
+	background: #f0c52e;
+	z-index: -1;
+	transform: translateY(5px);
+}
+
+.advantages-btn:hover::after{
+	padding: 20px 0;
+	transform: translateY(-10px);
+	transition: all 0.5s ease 0s;
+}
+.advantages-btn:active::after{
+	padding: 20px 0;	
+	background: #000;
+	transform: translateY(-10px);
+	box-shadow: 120px 0 0 #000;
+}
+.advantages-btn:active,button.advantages-btn__active{
+	color:#f7e184;
+}
+
+button.advantages-btn__active::after{
+	padding: 20px 0;	
+	background: #000;
+	transform: translateY(-10px);
+	box-shadow: 120px 0 0 #000;
 }
 
 .advantages-wrap{
 	width: 815px;
 	padding-left: 115px;	
-	/*justify-content: space-between;*/
-	background-color: #ccf;
 	background-position: 100% 50%;
-	background-repeat: no-repeat;
-	
+	background-repeat: no-repeat;	
 }
 
-.advantages-wrap:nth-child(1){
+.advantages-wrap-1{
 	background-image: url("../img/delivery.svg");
 }
-.advantages-wrap:nth-child(2){
+.advantages-wrap-2{
 	background-image: url("../img/warranty.svg");
 }
-.advantages-wrap:nth-child(3){
+.advantages-wrap-3{
 	background-image: url("../img/credit.svg");
 }
 
 .advantages-inner{
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: column;	
+}
+
+.advantages-head{
+	font-size: 47px;
+	line-height: 0;
+	padding-top: 58px;
 }
 
 .advantages-text{
@@ -652,10 +711,6 @@ a.pagination-active,
 .slider-feature__item span{
 	display: block;
 	font-size: 13px;
-}
-
-.advantages-container{
-	background-color: #e5e5e5;
 }
 
 .breadcrumbs__item,
