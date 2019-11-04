@@ -258,16 +258,26 @@
 	</footer>
     
     <div class="write-us-popup">
-    	<button>Close</button>
-    	<form action="index.html" method="post">
-    		<label>Ваше имя:</label>
-    		<input type="text" name="name" placeholder="Имя Фамилия" required>
-			<label>Ваш e-mail:</label>
-    		<input type="text" name="email" placeholder="email@example.com" required><br>
-    		<label>Текст письма:</label><br>
-    		<textarea name="message" placeholder="В свободной форме" rows="5" required></textarea><br>
-    		<input type="submit" value="Отправить">
-    	</form>
+    	<div class="write-us-inner">
+	    	<button class="popup-close">Close</button>
+	    	<form action="index.html" method="post">
+	    		<div class="popup-form-1">
+		    		<span class="popup__input-wrap">
+		    			<label>Ваше имя:</label>
+		    			<input type="text" name="name" placeholder="Имя Фамилия" required>
+		    		</span>
+					<span class="popup__input-wrap">
+						<label>Ваш e-mail:</label>
+		    			<input type="text" name="email" placeholder="email@example.com" required>
+		    		</span>
+	    		</div>
+	    		<div class="popup-form-2">
+		    		<label>Текст письма:</label>
+		    		<textarea name="message" placeholder="В свободной форме" rows="7" required></textarea>
+		    		<button type="submit" class="popup-btn">Отправить</button>
+		    	</div>
+	    	</form>
+    	</div>
     </div>
 
     <div class="map-popup">
