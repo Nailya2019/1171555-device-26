@@ -619,11 +619,15 @@ h2.contacts-head{
 	width: 32px;
 	height: 32px;
 	position: relative;
-	overflow: hidden;
-	border-radius:25px;
+	font-size: 0;
+	background-color: #7f7f7f;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url("../img/instagram.svg");
+	border-radius: 25px;
 }
 
-.socials__link::before{
+/*.socials__link::before{
 	content:"";
 	position: absolute;
 	width: 32px;
@@ -631,10 +635,10 @@ h2.contacts-head{
 	background-color: #7f7f7f;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	border-radius:25px;
-}
+	border-radius: 25px;
+}*/
 
-.facebook::before{
+/*.facebook::before{	
 	background-image: url("../img/fb.svg");
 }
 
@@ -644,7 +648,7 @@ h2.contacts-head{
 
 .twitter::before{
 	background-image: url("../img/twitter.svg");
-}
+}*/
 
 .tel{
 	align-self: flex-end;
@@ -1037,7 +1041,8 @@ a.pagination-active,
 
 /* Попап */
 .write-us-popup{
-	display: flex;	
+
+	display:none;	
 	justify-content: center;
 	align-items: center;
 	position: fixed;	
@@ -1055,7 +1060,8 @@ a.pagination-active,
 	position: relative;
 }
 
-.popup-close{
+.popup-close,
+.map-popup-btn{
 	font-size: 0;
 	position: absolute;
 	right: 22px;
@@ -1064,12 +1070,13 @@ a.pagination-active,
 	height: 54px;
 	border-radius: 30px;
 	cursor: pointer;
-	background-color: #f7e296;
-	
+	background-color: #f7e296;	
 }
 
 .popup-close::after,
-.popup-close::before{
+.popup-close::before,
+.map-popup-btn::after,
+.map-popup-btn::before{
 	content: "";
 	position: absolute;
 	left:12px;
@@ -1077,17 +1084,21 @@ a.pagination-active,
 	height: 2px;
 	background-color: #fff;	
 }
-.popup-close::after{
+.popup-close::after,
+.map-popup-btn::after{
 	transform: rotate(45deg);
 }
-.popup-close::before{
+.popup-close::before,
+.map-popup-btn::before{
 	transform: rotate(-45deg);
 }
 
-.popup-close:hover{
+.popup-close:hover,
+.map-popup-btn:hover{
 	background-color: #f0c52e;
 }
-.popup-close:active{
+.popup-close:active,
+.map-popup-btn:active{
 	background-color: #faedc0;
 }
 
@@ -1142,6 +1153,19 @@ a.pagination-active,
 }
 
 .map-popup{
-	
+	display: none;
+	position: fixed;
+	top:20%;
+	left: 50%;
+	margin-left: -480px;
+	box-shadow: 10px 10px 20px rgba(4,6,6,0.2);
+	z-index: 999;	
 }
 
+.map-popup-inner{
+	position: relative;	
+}
+
+.popup__img{
+	max-width: 100%;	
+}
