@@ -99,6 +99,7 @@ input::placeholder{
 .desc{
 	color:#464646;
 	line-height: 2;
+	margin-bottom: 30px;
 }
 
 .popular__img-title,
@@ -141,7 +142,7 @@ input::placeholder{
 	position: absolute;
 	top:3px;
 	left:0;
-	width:16px;
+	width:18px;
 	height: 15px;	
 }
 
@@ -162,11 +163,11 @@ input::placeholder{
 }
 
 .footer__btn-wrap .footer__compare::before{
-	background: url("../img/compare-yellow.png") no-repeat 0 0;
+	background: url("../img/compare-yellow.png") no-repeat 5px 0;
 }
 
 .footer__btn-wrap .footer__bascket::before{
-	background: url("../img/cart-yellow.png") no-repeat 0 0;
+	background: url("../img/cart-yellow.png") no-repeat 4px 0;
 }
 
 
@@ -210,10 +211,11 @@ input::placeholder{
 .about-contacts-wrapper{
 	display: flex;	
 	justify-content: space-between;
-	margin-bottom: 94px;
+	margin-bottom: 84px;
 }	
 
-.about-container{	
+
+.about-container{
 	width:470px;
 	/*background-color: #ccf;*/
 }
@@ -248,7 +250,6 @@ input::placeholder{
 	flex-direction: column;
 	margin-left: 40px;
 	padding-top: 39px;
-	/*background: #ccf;*/
 }
 
 .slider-line{
@@ -266,13 +267,56 @@ input::placeholder{
 .slider-feature__item{
 	margin-right: 77px;
 }
+
 .slider-feature__item:last-child{
 	margin-right: 0;
+	margin-left: 10px;
 }
 
 .popular-container{
-	margin-bottom: 64px;
-	/*background: #fcc;*/
+	margin-bottom: 64px;	
+}
+
+.radio-btn-wrap{
+	display: flex;	
+	align-items: center;
+	margin-top: 16px;
+}
+
+.radio-btn-list{	
+	display: flex;
+	padding-left: 0;
+}
+
+.radio-btn__item{
+	margin-left: 20px;
+}
+.radio-btn__item:first-child{
+	margin-left: 0;
+}
+
+.radio-btn__link{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border:1px solid #000;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.radio-btn__link-active{
+	position: relative;
+}
+
+.radio-btn__link-active::after{
+	content: "";
+	position:absolute;
+	top:2px;
+	left:2px;	
+	width: 6px;
+	height: 6px;
+	border:1px solid #000;
+	border-radius: 50%;
 }
 
 .popular-list{	
@@ -369,7 +413,7 @@ input::placeholder{
 	width: 285px;
 	height: 320px;
 	flex-direction: column;	
-	justify-content: center;	
+	/*justify-content: center;	*/
 	padding-left: 0;
 	/*padding-top: 30px;*/
 	margin: 0;
@@ -377,7 +421,10 @@ input::placeholder{
 }
 
 .advantages-btn__item{
-	margin-bottom: 30px;	
+	margin-bottom: 34px;	
+}
+.advantages-btn__item:first-child{
+	margin-top: 86px;
 }
 .advantages-btn__item:last-child{
 	margin-bottom: 0;
@@ -398,7 +445,7 @@ input::placeholder{
 }
 .slider-details{
 	width: 220px;
-	margin-top: 28px;
+	margin-right: 180px;
 }
 .filter-btn,
 .popup-btn{
@@ -524,11 +571,21 @@ button.advantages-btn__active::after{
 }
 
 .logo-container{
-	margin: 90px 0 82px;
+	margin: 90px 0 83px;
 }
 
 .logo-list{
 	display: flex;
+	padding-left: 0;
+	padding-top: 5px;
+}
+
+.logo__item{
+	margin-right: 40px;
+}
+
+.logo__item:last-child{
+	margin-right:0;
 }
 
 h2.about-head,
@@ -546,16 +603,18 @@ h2.contacts-head{
 }
 
 .contacts-map{
-	margin: 22px 0 60px;
+	margin: 9px 0 61px;
 }
 
 .about-list{
-	margin: 48px 0 68px;
-	padding-left: 32px;
+	margin: 38px 0 58px;
+    padding-left: 35px;
 }
 
 .about__item{
 	position: relative;
+	margin-bottom: 4px;
+	letter-spacing: -1px;
 }
 
 .about__item::before{
@@ -567,32 +626,29 @@ h2.contacts-head{
 	height: 8px;
 	border: 2px solid #e4e4e4;
 	border-radius: 5px;
-
 }
 
-.footer div{
 
-}
-
-.footer-wrap-1{
+.footer-wrap-1,
+.footer-wrap-3{
 	display: flex;	
-	/*background: #ccf;*/
 	justify-content: space-between;
 	align-items: center;
 }
 
 .footer-wrap-2{	
 	display: flex;	
-	/*background: #fcc;*/
-	justify-content: space-between;
-	align-items: center;
+	justify-content: space-between;	
+	margin-top: 16px;
 }
 
-.footer-wrap-3{	
-	display: flex;	
-	justify-content: space-between;	
-	/*background: #ccf;*/
-	align-items: center;
+.footer-advantages-list{
+	width: 430px;
+	margin-left: -34px;
+}
+
+.socials-wrap{
+	margin-left: -54px;
 }
 
 .footer-advantages-list,
@@ -602,7 +658,7 @@ h2.contacts-head{
 }
 
 .footer-advantages__item{
-	margin-right: 45px;
+	margin-right: 34px;
 }
 
 .footer-advantages__item:last-child{
@@ -652,13 +708,15 @@ h2.contacts-head{
 
 .footer-line{
 	display: inline-block;
+	margin-top: 16px;
 	width: 80px;
 	height: 7px;
 	background: #f0c52e;
 }
 .logo-html{
 	display: inline-block;
-	width: 26px;
+	margin-top: 15px;
+	width: 27px;
 	height: 38px;
 	background: url("../img/logo-html.png") no-repeat 0 0;
 }
@@ -866,7 +924,8 @@ span.arr-blocked,
 }*/
 
 .footer__btn-wrap .btn-user{
-	margin-left: 40px;
+	margin-left: 34px;
+	top:-3px;
 }
 
 /* end Сетка*/
@@ -949,7 +1008,7 @@ a.pagination-active,
 
 .slider-feature-list{
 	padding-left: 0;
-	margin-top: 39px;
+	margin-top: 27px;
 }
 
 .slider-feature__item{
@@ -1004,9 +1063,27 @@ a.pagination-active,
 
 /* Cетка */
 .navigation{
-	display:none;
+	display: flex;
+	width: 100%;
+	position: absolute;
+	left:0;
+	background: #f7e296;
+	z-index: 99;
+    padding-left: 20px;
+    margin-top: 6px;
 }
 
+.nav-list{
+	margin-right: 19px;
+}
+.nav-list li{
+	letter-spacing: 0.2px;
+	margin-bottom: 5px;
+}
+
+.nav-list:last-child{
+	margin-left: 13px;
+}
 
 /* catalog.html */
 .catalog-container{
@@ -1045,6 +1122,7 @@ a.pagination-active,
 .footer-advantages__link:hover{
 	color: rgba(255, 255, 255, 0.6);
 }
+
 
 /* Попап */
 .write-us-popup{
