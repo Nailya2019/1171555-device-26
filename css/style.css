@@ -774,6 +774,10 @@ h2.contacts-head{
 	padding-right: 0;
 }
 
+.main-aside-inner{
+	background-image: linear-gradient(to right, #EBEBEB 28%, #fff 28%);
+}
+
 .main-aside-inner div{
 	display: flex;
 	justify-content: space-between;
@@ -782,7 +786,8 @@ h2.contacts-head{
 /* Фильтр-заголовок*/
 .filter-header-container{
 	position: relative;	
-	background: #ebebeb;
+	background-color: #ebebeb;
+	background-image: linear-gradient(to right, #DBDBDB 28%, #ebebeb 28%);
 }
 .filter-header-container div{
 	display: flex;
@@ -892,7 +897,7 @@ span.arr-blocked,
   position: absolute;
   top:-10px;
   width: 20px;
-  height: 20px;  
+  height: 20px;
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
