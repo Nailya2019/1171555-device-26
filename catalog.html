@@ -13,6 +13,7 @@
 
 			<form action="index.html" method="post" class="search-wrap">
 				<input type="text" name="search" placeholder="Посик по сайту" class="search">
+				<!-- <button type="submit" class="search-btn">Найти</button> -->
 			</form>
 			
 			<div class="catalog-menu-wrap">				
@@ -95,16 +96,16 @@
 						</div>
 						<div class="filter-wrap">
 							<h3 class="color-head">Цвет</h3>
-							<label class="color-label"><input type="checkbox" name="black" value="Чёрный" checked> Чёрный</label>
-							<label class="color-label"><input type="checkbox" name="white" value="Белый"> Белый</label>
-							<label class="color-label"><input type="checkbox" name="blue" value="Синий" checked> Синий</label>
-							<label class="color-label"><input type="checkbox" name="red" value="Красный" checked> Красный</label>
-							<label class="color-label"><input type="checkbox" name="pink" value="Розовый"> Розовый</label>
+							<input type="checkbox" name="black" id="black" value="Чёрный" checked><label class="color-label" for="black">Чёрный</label>
+							<input type="checkbox" name="white" id="white" value="Белый"><label class="color-label" for="white">Белый</label>
+							<input type="checkbox" name="blue" id="blue" value="Синий" checked><label class="color-label" for="blue">Синий</label>
+							<input type="checkbox" name="red" id="red" value="Красный" checked><label class="color-label" for="red">Красный</label>
+							<input type="checkbox" name="pink" id="pink" value="Розовый"><label class="color-label" for="pink">Розовый</label>
 						</div>
 						<div class="filter-wrap">
 							<h3 class="bluetooth-head">Bluetooth</h3>
-							<label class="bluetooth-label"><input type="radio" name="bluetooth" value="Есть" checked> Есть</label>
-							<label class="bluetooth-label"><input type="radio" name="bluetooth" value="Нет"> Нет</label>
+							<input type="radio" name="bluetooth" id="yes" value="Есть" checked><label class="bluetooth-label" for="yes">Есть</label>
+							<input type="radio" name="bluetooth" id="no" value="Нет"><label class="bluetooth-label" for="no">Нет</label>
 						</div>
 						<button type="submit" class="nav-btn filter-btn">Показать</button>
 					</form>					
@@ -173,7 +174,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-wrap-1">
-				<img src="img/logo-yellow.svg" class="footer-logo" alt="Логотип интернет-магазина гаджетов «Девайс»" width="200">
+				<a href="index.html"><img src="img/logo-yellow.svg" class="footer-logo" alt="Логотип интернет-магазина гаджетов «Девайс»" width="200"></a>
 				<div class="footer__btn-wrap">
 					<span class="btn-user user-name footer__entry">Валентин Петухов</span>
 					<a href="" class="btn-user btn-registed">Выйти</a>				
