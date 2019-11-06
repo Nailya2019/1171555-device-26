@@ -89,12 +89,27 @@
 
 			<div class="container">					
 				<aside class="filter-container">
-					<form class="filter-form">
+					<form class="filter-form" method="post" action="catalog.html">
 						<div class="filter-wrap">
+							<div class="filter-line"></div>
 							<h3 class="price-head">Стоимость</h3>					
-							<input type="range" min="0" max="10000" step="10">
+							<!-- <input type="range" min="0" max="10000" step="10"> -->
+							<div class="range-filter">
+								<div class="range-controls">
+						            <div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+								<div class="price-controls">
+									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+									<label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+								</div>
+							</div>
 						</div>
 						<div class="filter-wrap">
+							<div class="filter-line"></div>
 							<h3 class="color-head">Цвет</h3>
 							<input type="checkbox" name="black" id="black" value="Чёрный" checked><label class="color-label" for="black">Чёрный</label>
 							<input type="checkbox" name="white" id="white" value="Белый"><label class="color-label" for="white">Белый</label>
@@ -103,6 +118,7 @@
 							<input type="checkbox" name="pink" id="pink" value="Розовый"><label class="color-label" for="pink">Розовый</label>
 						</div>
 						<div class="filter-wrap">
+							<div class="filter-line"></div>
 							<h3 class="bluetooth-head">Bluetooth</h3>
 							<input type="radio" name="bluetooth" id="yes" value="Есть" checked><label class="bluetooth-label" for="yes">Есть</label>
 							<input type="radio" name="bluetooth" id="no" value="Нет"><label class="bluetooth-label" for="no">Нет</label>
